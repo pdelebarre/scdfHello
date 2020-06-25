@@ -14,15 +14,17 @@ version: '3'
 # - 20000-20105:20000-20105 - Port range for all deployed stream applications. That means you can reach the
 #                             application's actuator endpoints from your host machine.
 services:
-  mysql:
-    image: mysql:5.7.25
-    container_name: dataflow-mysql
+  db:
+    image: "postgres:alpine"
+    container_name: "postgres"
     environment:
-      MYSQL_DATABASE: dataflow
-      MYSQL_USER: root
-      MYSQL_ROOT_PASSWORD: rootpw
-    expose:
-      - 3306
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=rootpw
+      - POSTGRES_DB=dataflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./dataflow-data:/var/lib/postgresql/data
 
   kafka-broker:
     image: confluentinc/cp-kafka:5.3.1
@@ -56,15 +58,20 @@ services:
       - spring.cloud.dataflow.applicationProperties.stream.spring.cloud.stream.kafka.binder.zkNodes=zookeeper:2181
       - spring.cloud.dataflow.applicationProperties.stream.spring.cloud.stream.kafka.streams.binder.zkNodes=zookeeper:2181
       - spring.cloud.skipper.client.serverUri=http://skipper-server:7577/api
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/dataflow
+      - spring.cloud.dataflow.applicationProperties.stream.management.metrics.export.prometheus.enabled=true
+      - spring.cloud.dataflow.applicationProperties.stream.spring.cloud.streamapp.security.enabled=false
+      - spring.cloud.dataflow.applicationProperties.stream.management.endpoints.web.exposure.include=prometheus,info,health
+      - spring.cloud.dataflow.grafana-info.url=http://localhost:3000
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/dataflow
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=rootpw
-      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.mariadb.jdbc.Driver
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
     depends_on:
       - kafka-broker
     entrypoint: "./wait-for-it.sh mysql:3306 -- java -jar /maven/spring-cloud-dataflow-server.jar"
     volumes:
       - ${HOST_MOUNT_PATH:-.}:${DOCKER_MOUNT_PATH:-/root/scdf}
+      - /Volumes/LaCie/Dev/m2:/root/.m2/repository
 
   app-import:
     image: springcloud/openjdk:2.0.0.RELEASE
@@ -88,10 +95,53 @@ services:
     environment:
       - SPRING_CLOUD_SKIPPER_SERVER_PLATFORM_LOCAL_ACCOUNTS_DEFAULT_PORTRANGE_LOW=20000
       - SPRING_CLOUD_SKIPPER_SERVER_PLATFORM_LOCAL_ACCOUNTS_DEFAULT_PORTRANGE_HIGH=20100
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/dataflow
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/dataflow
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=rootpw
-      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.mariadb.jdbc.Driver
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
     entrypoint: "./wait-for-it.sh mysql:3306 -- java -jar /maven/spring-cloud-skipper-server.jar"
     volumes:
       - ${HOST_MOUNT_PATH:-.}:${DOCKER_MOUNT_PATH:-/root/scdf}
+      - /Volumes/LaCie/Dev/m2:/root/.m2/repository
+
+  # Grafana is configured with the Prometheus datasource.
+  # Use `docker exec -it prometheus /bin/sh` to logging in the container
+  prometheus:
+    image: springcloud/spring-cloud-dataflow-prometheus-local:${DATAFLOW_VERSION:?DATAFLOW_VERSION is not set! Use 'export DATAFLOW_VERSION=local-server-image-tag'}
+    container_name: prometheus
+    volumes:
+      - 'scdf-targets:/etc/prometheus/'
+    ports:
+      - '9090:9090'
+    depends_on:
+      - service-discovery
+
+  # The service-discovery container. Required for Prometheus setup only
+  # Use `docker exec -it service-discovery /bin/sh` to logging the container
+  service-discovery:
+    image: springcloud/spring-cloud-dataflow-prometheus-service-discovery:0.0.4.RELEASE
+    container_name: service-discovery
+    volumes:
+      - 'scdf-targets:/tmp/scdf-targets/'
+    expose:
+      - '8181'
+    ports:
+      - '8181:8181'
+    environment:
+      - metrics.prometheus.target.cron=0/20 * * * * *
+      - metrics.prometheus.target.filePath=/tmp/scdf-targets/targets.json
+      - metrics.prometheus.target.discoveryUrl=http://dataflow-server:9393/runtime/apps
+      - metrics.prometheus.target.overrideIp=skipper-server
+      - server.port=8181
+    depends_on:
+      - dataflow-server
+
+  # Grafana SCDF Prometheus pre-built image:
+  grafana:
+    image: springcloud/spring-cloud-dataflow-grafana-prometheus:${DATAFLOW_VERSION:?DATAFLOW_VERSION is not set! Use 'export DATAFLOW_VERSION=local-server-image-tag'}
+    container_name: grafana
+    ports:
+      - '3000:3000'
+
+volumes:
+  scdf-targets:
