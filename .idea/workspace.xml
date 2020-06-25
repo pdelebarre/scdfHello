@@ -20,6 +20,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="a361efbd4b502fbfb8c62aa0831ba180c28b6abd" />
+  </component>
   <component name="ProjectId" id="1dnuyyaRdlCCuTNa2kMtXDBy7N5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -87,7 +90,7 @@
       <workItem from="1593074759779" duration="2907000" />
       <workItem from="1593083718868" duration="3621000" />
       <workItem from="1593090111239" duration="164000" />
-      <workItem from="1593090294189" duration="6045000" />
+      <workItem from="1593090294189" duration="6351000" />
     </task>
     <task id="LOCAL-00001" summary="first commit based on tasks">
       <created>1593098034922</created>
@@ -110,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593098925173</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="second commit based on tasks">
+      <created>1593098982942</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593098982942</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,14 +211,26 @@
       <screen x="46" y="23" width="2514" height="1417" />
     </state>
     <state x="1037" y="449" key="Maven.ArtifactSearchDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593073805490" />
+    <state x="1518" y="474" width="449" height="252" key="MultipleFileMergeDialog" timestamp="1593099000318">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1518" y="474" width="449" height="252" key="MultipleFileMergeDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593099000318" />
     <state x="988" y="439" key="SettingsEditor" timestamp="1593079161538">
       <screen x="47" y="23" width="2513" height="1417" />
     </state>
     <state x="987" y="369" key="SettingsEditor/46.23.2514.1417@46.23.2514.1417" timestamp="1593075384898" />
     <state x="988" y="439" key="SettingsEditor/47.23.2513.1417@47.23.2513.1417" timestamp="1593079161538" />
-    <state x="1230" y="327" key="Vcs.Push.Dialog.v2" timestamp="1593098933892">
+    <state x="1230" y="327" key="Vcs.Push.Dialog.v2" timestamp="1593098985425">
       <screen x="45" y="23" width="2515" height="1417" />
     </state>
-    <state x="1230" y="327" key="Vcs.Push.Dialog.v2/45.23.2515.1417@45.23.2515.1417" timestamp="1593098933892" />
+    <state x="1230" y="327" key="Vcs.Push.Dialog.v2/45.23.2515.1417@45.23.2515.1417" timestamp="1593098985425" />
+    <state x="1417" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593099216929">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1417" y="521" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/45.23.2515.1417@45.23.2515.1417" timestamp="1593099216929" />
+    <state x="1407" y="396" key="git4idea.merge.GitMergeDialog" timestamp="1593099208743">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1407" y="396" key="git4idea.merge.GitMergeDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593099208743" />
   </component>
 </project>
