@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0301382e-7282-4ea3-bece-e9ee652f2afb" name="Default Changelist" comment="first commit based on tasks">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="0301382e-7282-4ea3-bece-e9ee652f2afb" name="Default Changelist" comment="second commit based on tasks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +11,14 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1dnuyyaRdlCCuTNa2kMtXDBy7N5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -82,7 +87,7 @@
       <workItem from="1593074759779" duration="2907000" />
       <workItem from="1593083718868" duration="3621000" />
       <workItem from="1593090111239" duration="164000" />
-      <workItem from="1593090294189" duration="5476000" />
+      <workItem from="1593090294189" duration="6045000" />
     </task>
     <task id="LOCAL-00001" summary="first commit based on tasks">
       <created>1593098034922</created>
@@ -91,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1593098034922</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second commit based on tasks">
+      <created>1593098498418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593098498418</updated>
+    </task>
+    <task id="LOCAL-00003" summary="second commit based on tasks">
+      <created>1593098925173</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593098925173</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,13 +118,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit based on tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit based on tasks" />
+    <MESSAGE value="second commit based on tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="second commit based on tasks" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1507" y="520" key="#Environment_variables" timestamp="1593092221119">
       <screen x="45" y="23" width="2515" height="1417" />
     </state>
     <state x="1507" y="520" key="#Environment_variables/45.23.2515.1417@45.23.2515.1417" timestamp="1593092221119" />
+    <state x="1507" y="470" key="#Notifications" timestamp="1593098512286">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1507" y="470" key="#Notifications/45.23.2515.1417@45.23.2515.1417" timestamp="1593098512286" />
     <state x="1115" y="401" key="#SimpleCloudTaskApplication" timestamp="1593090388138">
       <screen x="46" y="23" width="2514" height="1417" />
     </state>
@@ -137,6 +161,10 @@
     </state>
     <state x="1878" y="461" key="EnvironmentVariablesDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593092865750" />
     <state x="1878" y="461" key="EnvironmentVariablesDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593085213997" />
+    <state x="1500" y="504" key="Github.ShareDialog" timestamp="1593098614593">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1500" y="504" key="Github.ShareDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593098614593" />
     <state width="1683" height="315" key="GridCell.Tab.0.bottom" timestamp="1593090607439">
       <screen x="46" y="23" width="2514" height="1417" />
     </state>
@@ -178,9 +206,9 @@
     </state>
     <state x="987" y="369" key="SettingsEditor/46.23.2514.1417@46.23.2514.1417" timestamp="1593075384898" />
     <state x="988" y="439" key="SettingsEditor/47.23.2513.1417@47.23.2513.1417" timestamp="1593079161538" />
-    <state x="1230" y="327" key="Vcs.Push.Dialog.v2" timestamp="1593098301046">
+    <state x="1230" y="327" key="Vcs.Push.Dialog.v2" timestamp="1593098933892">
       <screen x="45" y="23" width="2515" height="1417" />
     </state>
-    <state x="1230" y="327" key="Vcs.Push.Dialog.v2/45.23.2515.1417@45.23.2515.1417" timestamp="1593098301046" />
+    <state x="1230" y="327" key="Vcs.Push.Dialog.v2/45.23.2515.1417@45.23.2515.1417" timestamp="1593098933892" />
   </component>
 </project>
