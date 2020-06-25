@@ -24,7 +24,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./dataflow-data:/var/lib/postgresql/data
+      - /Volumes/LaCie/Dev/docker/scdfdata:/var/lib/postgresql/data
 
   kafka-broker:
     image: confluentinc/cp-kafka:5.3.1
@@ -68,7 +68,7 @@ services:
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
     depends_on:
       - kafka-broker
-    entrypoint: "./wait-for-it.sh mysql:3306 -- java -jar /maven/spring-cloud-dataflow-server.jar"
+    entrypoint: "./wait-for-it.sh db:5432 -- java -jar /maven/spring-cloud-dataflow-server.jar"
     volumes:
       - ${HOST_MOUNT_PATH:-.}:${DOCKER_MOUNT_PATH:-/root/scdf}
       - /Volumes/LaCie/Dev/m2:/root/.m2/repository
@@ -99,7 +99,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=rootpw
       - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.postgresql.Driver
-    entrypoint: "./wait-for-it.sh mysql:3306 -- java -jar /maven/spring-cloud-skipper-server.jar"
+    entrypoint: "./wait-for-it.sh db:5432 -- java -Djava.security.egd=file:/dev/./urandom -jar /spring-cloud-skipper-server.jar"
     volumes:
       - ${HOST_MOUNT_PATH:-.}:${DOCKER_MOUNT_PATH:-/root/scdf}
       - /Volumes/LaCie/Dev/m2:/root/.m2/repository
