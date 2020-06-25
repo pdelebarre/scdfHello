@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0301382e-7282-4ea3-bece-e9ee652f2afb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dnuyyaRdlCCuTNa2kMtXDBy7N5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="service.view.auto.scroll.from.source" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="scdf" type="docker-deploy" factoryName="docker-compose.yml" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envVars">
+            <list>
+              <DockerEnvVarImpl>
+                <option name="name" value="DATAFLOW_VERSION" />
+                <option name="value" value="2.5.1.RELEASE" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="SKIPPER_VERSION" />
+                <option name="value" value="2.4.1.RELEASE" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="MAVEN_LOCAL_REPOSITORYHOST_MOUNT_PATH" />
+                <option name="value" value="$MAVEN_REPOSITORY$" />
+              </DockerEnvVarImpl>
+              <DockerEnvVarImpl>
+                <option name="name" value="DOCKER_MOUNT_PATH" />
+                <option name="value" value="$MAVEN_REPOSITORY$" />
+              </DockerEnvVarImpl>
+            </list>
+          </option>
+          <option name="sourceFilePath" value="src/main/resources/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0301382e-7282-4ea3-bece-e9ee652f2afb" name="Default Changelist" comment="" />
+      <created>1593073436786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593073436786</updated>
+      <workItem from="1593073438583" duration="465000" />
+      <workItem from="1593073974651" duration="258000" />
+      <workItem from="1593074428710" duration="188000" />
+      <workItem from="1593074625505" duration="123000" />
+      <workItem from="1593074759779" duration="2907000" />
+      <workItem from="1593083718868" duration="3621000" />
+      <workItem from="1593090111239" duration="164000" />
+      <workItem from="1593090294189" duration="5139000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1507" y="520" key="#Environment_variables" timestamp="1593092221119">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1507" y="520" key="#Environment_variables/45.23.2515.1417@45.23.2515.1417" timestamp="1593092221119" />
+    <state x="1115" y="401" key="#SimpleCloudTaskApplication" timestamp="1593090388138">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state x="1115" y="401" key="#SimpleCloudTaskApplication/46.23.2514.1417@46.23.2514.1417" timestamp="1593090388138" />
+    <state x="1116" y="401" key="#SimpleCloudTaskApplication/47.23.2513.1417@47.23.2513.1417" timestamp="1593075471164" />
+    <state x="1489" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593097869703">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1489" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593097869703" />
+    <state x="1489" y="391" key="#com.intellij.execution.impl.EditConfigurationsDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593090637627" />
+    <state x="1304" y="670" width="419" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1593079047936">
+      <screen x="47" y="23" width="2513" height="1417" />
+    </state>
+    <state x="1304" y="670" width="419" height="234" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/47.23.2513.1417@47.23.2513.1417" timestamp="1593079047936" />
+    <state x="1193" y="282" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1593092983754">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1193" y="282" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593092983754" />
+    <state x="733" y="300" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593090569006">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state x="733" y="300" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593090569006" />
+    <state x="1883" y="591" key="DockerComposeFileDialog" timestamp="1593085042221">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1883" y="591" key="DockerComposeFileDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593085042221" />
+    <state x="1878" y="461" key="EnvironmentVariablesDialog" timestamp="1593092865750">
+      <screen x="45" y="23" width="2515" height="1417" />
+    </state>
+    <state x="1878" y="461" key="EnvironmentVariablesDialog/45.23.2515.1417@45.23.2515.1417" timestamp="1593092865750" />
+    <state x="1878" y="461" key="EnvironmentVariablesDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593085213997" />
+    <state width="1683" height="315" key="GridCell.Tab.0.bottom" timestamp="1593090607439">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.0.bottom/46.23.2514.1417@46.23.2514.1417" timestamp="1593090607439" />
+    <state width="1683" height="315" key="GridCell.Tab.0.center" timestamp="1593090607438">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.0.center/46.23.2514.1417@46.23.2514.1417" timestamp="1593090607438" />
+    <state width="1683" height="315" key="GridCell.Tab.0.left" timestamp="1593090607438">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.0.left/46.23.2514.1417@46.23.2514.1417" timestamp="1593090607438" />
+    <state width="1683" height="315" key="GridCell.Tab.0.right" timestamp="1593090607439">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.0.right/46.23.2514.1417@46.23.2514.1417" timestamp="1593090607439" />
+    <state width="1683" height="315" key="GridCell.Tab.1.bottom" timestamp="1593073904146">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.1.bottom/46.23.2514.1417@46.23.2514.1417" timestamp="1593073904146" />
+    <state width="1683" height="315" key="GridCell.Tab.1.center" timestamp="1593073904146">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.1.center/46.23.2514.1417@46.23.2514.1417" timestamp="1593073904146" />
+    <state width="1683" height="315" key="GridCell.Tab.1.left" timestamp="1593073904145">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.1.left/46.23.2514.1417@46.23.2514.1417" timestamp="1593073904145" />
+    <state width="1683" height="315" key="GridCell.Tab.1.right" timestamp="1593073904146">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state width="1683" height="315" key="GridCell.Tab.1.right/46.23.2514.1417@46.23.2514.1417" timestamp="1593073904146" />
+    <state x="1037" y="449" key="Maven.ArtifactSearchDialog" timestamp="1593073805490">
+      <screen x="46" y="23" width="2514" height="1417" />
+    </state>
+    <state x="1037" y="449" key="Maven.ArtifactSearchDialog/46.23.2514.1417@46.23.2514.1417" timestamp="1593073805490" />
+    <state x="988" y="439" key="SettingsEditor" timestamp="1593079161538">
+      <screen x="47" y="23" width="2513" height="1417" />
+    </state>
+    <state x="987" y="369" key="SettingsEditor/46.23.2514.1417@46.23.2514.1417" timestamp="1593075384898" />
+    <state x="988" y="439" key="SettingsEditor/47.23.2513.1417@47.23.2513.1417" timestamp="1593079161538" />
+  </component>
+</project>
