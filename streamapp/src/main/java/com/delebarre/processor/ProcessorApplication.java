@@ -1,6 +1,5 @@
 package com.delebarre.processor;
 
-import com.delebarre.source.SourceApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,6 +29,6 @@ public class ProcessorApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SourceApplication.class, args);
+        SpringApplication.run(ProcessorApplication.class, args);
     }
 }
